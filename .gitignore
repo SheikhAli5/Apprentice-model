@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+
+# Teacher responses (regenerable, can be large)
+cache/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
