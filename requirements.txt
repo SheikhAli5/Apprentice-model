@@ -1,3 +1,14 @@
-ir_datasets
-pandas
-ipykernel
+# Python 3.11 on macOS (Apple M3, MPS), 3.12 on Colab (CUDA)
+torch==2.15.0
+transformers==5.23.0
+bm25s==0.3.16
+PyStemmer==3.1.0
+numpy==2.4.6
+scipy==1.17.1
+pandas==3.1.1
+matplotlib
+ir_datasets==0.6.3
+ir_measures==0.4.3
+openai==3.46.0
+python-dotenv==1.2.4
+ipykernel==7.4.0

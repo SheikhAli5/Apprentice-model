@@ -1,0 +1,32 @@
+{
+  "tiny": {
+    "params_M": 4.39,
+    "ms_per_query_cpu": 62.8,
+    "ms_per_query_mps": 36.9
+  },
+  "mini": {
+    "params_M": 11.17,
+    "ms_per_query_cpu": 242.8,
+    "ms_per_query_mps": 102.5
+  },
+  "small": {
+    "params_M": 28.76,
+    "ms_per_query_cpu": 635.7,
+    "ms_per_query_mps": 238.6
+  },
+  "base": {
+    "params_M": 109.48,
+    "ms_per_query_cpu": 3512.9,
+    "ms_per_query_mps": 1425.4
+  },
+  "ref_MiniLM-L6": {
+    "params_M": 22.71,
+    "ms_per_query_cpu": 630.5,
+    "ms_per_query_mps": 223.3
+  },
+  "teacher_gpt-5.4-mini": {
+    "ms_per_query_api": 15700,
+    "usd_per_query": 0.019,
+    "note": "6 windows of 30, from the cached DL19/DL20 runs"
+  }
+}

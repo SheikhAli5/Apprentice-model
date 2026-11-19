@@ -1,0 +1,562 @@
+train: 5000 | естественных: 2593
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+W1115 00:06:05.518000 85734 .venv/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/105 [00:00<?, ?it/s]Loading weights: 100%|██████████| 105/105 [00:00<00:00, 9481.61it/s]
+  ориентир val: 0.391
+  ориентир dl19: 0.740
+  ориентир dl20: 0.680
+tiny H-nat s1: уже посчитано, пропускаю
+tiny T-nat s1: уже посчитано, пропускаю
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 6552.55it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== tiny H-nat seed 2 на mps ===
+    H шаг 250/649  loss 3.3287  29 с
+    H шаг 500/649  loss 3.1517  61 с
+    H шаг 250/649  loss 3.0103  33 с
+    H шаг 500/649  loss 2.9208  62 с
+  tiny H-nat s2 val: 0.243
+  tiny H-nat s2 dl19: 0.541
+  tiny H-nat s2 dl20: 0.501
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 6826.55it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== tiny T-nat seed 2 на mps ===
+    T шаг 250/649  loss 0.6669  30 с
+    T шаг 500/649  loss 0.6285  72 с
+    T шаг 250/649  loss 0.6203  43 с
+    T шаг 500/649  loss 0.6070  86 с
+  tiny T-nat s2 val: 0.215
+  tiny T-nat s2 dl19: 0.557
+  tiny T-nat s2 dl20: 0.488
+mini H-nat s1: уже посчитано, пропускаю
+mini T-nat s1: уже посчитано, пропускаю
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 34178.31it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== mini H-nat seed 2 на mps ===
+    H шаг 250/649  loss 3.0867  134 с
+    H шаг 500/649  loss 2.7351  239 с
+    H шаг 250/649  loss 2.5121  105 с
+    H шаг 500/649  loss 2.5009  236 с
+  mini H-nat s2 val: 0.260
+  mini H-nat s2 dl19: 0.592
+  mini H-nat s2 dl20: 0.554
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 34927.94it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== mini T-nat seed 2 на mps ===
+    T шаг 250/649  loss 0.6274  102 с
+    T шаг 500/649  loss 0.5718  205 с
+    T шаг 250/649  loss 0.5555  103 с
+    T шаг 500/649  loss 0.5429  207 с
+  mini T-nat s2 val: 0.278
+  mini T-nat s2 dl19: 0.601
+  mini T-nat s2 dl20: 0.557
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 64667.88it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small H-nat seed 1 на mps ===
+    H шаг 250/649  loss 2.9678  276 с
+    H шаг 500/649  loss 2.5060  552 с
+    H шаг 250/649  loss 2.1850  272 с
+    H шаг 500/649  loss 2.1739  545 с
+  small H-nat s1 val: 0.290
+  small H-nat s1 dl19: 0.630
+  small H-nat s1 dl20: 0.589
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 33520.44it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small T-nat seed 1 на mps ===
+    T шаг 250/649  loss 0.6108  286 с
+    T шаг 500/649  loss 0.5577  569 с
+    T шаг 250/649  loss 0.5183  282 с
+    T шаг 500/649  loss 0.5125  564 с
+  small T-nat s1 val: 0.311
+  small T-nat s1 dl19: 0.637
+  small T-nat s1 dl20: 0.599
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 50388.42it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small H-nat seed 2 на mps ===
+    H шаг 250/649  loss 2.9226  439 с
+    H шаг 500/649  loss 2.4937  799 с
+    H шаг 250/649  loss 2.1778  351 с
+    H шаг 500/649  loss 2.1605  668 с
+  small H-nat s2 val: 0.289
+  small H-nat s2 dl19: 0.632
+  small H-nat s2 dl20: 0.589
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 23279.83it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small T-nat seed 2 на mps ===
+    T шаг 250/649  loss 0.6078  388 с
+    T шаг 500/649  loss 0.5546  771 с
+    T шаг 250/649  loss 0.5244  357 с
+    T шаг 500/649  loss 0.5102  693 с
+  small T-nat s2 val: 0.297
+  small T-nat s2 dl19: 0.641
+  small T-nat s2 dl20: 0.592
+--- [1/3] nat seeds 1–2 готовы, 162 мин
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 7801.68it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== tiny seed 3 на mps ===
+    H шаг 250/1250  loss 3.3837  37 с
+    H шаг 500/1250  loss 3.2408  72 с
+    H шаг 750/1250  loss 3.1395  105 с
+    H шаг 1000/1250  loss 3.0669  140 с
+    H шаг 1250/1250  loss 3.0660  175 с
+  tiny H1  s3 val: 0.106
+  tiny H1  s3 dl19: 0.454
+  tiny H1  s3 dl20: 0.369
+    H шаг 250/1250  loss 2.9631  35 с
+    H шаг 500/1250  loss 2.9256  68 с
+    H шаг 750/1250  loss 2.9617  101 с
+    H шаг 1000/1250  loss 2.9734  135 с
+    H шаг 1250/1250  loss 2.8993  165 с
+  tiny H   s3 val: 0.114
+  tiny H   s3 dl19: 0.462
+  tiny H   s3 dl20: 0.389
+    T шаг 250/1250  loss 0.6595  33 с
+    T шаг 500/1250  loss 0.6381  67 с
+    T шаг 750/1250  loss 0.6348  100 с
+    T шаг 1000/1250  loss 0.6346  135 с
+    T шаг 1250/1250  loss 0.6266  168 с
+  tiny HT  s3 val: 0.219
+  tiny HT  s3 dl19: 0.571
+  tiny HT  s3 dl20: 0.498
+    T шаг 250/1250  loss 0.6794  33 с
+    T шаг 500/1250  loss 0.6467  68 с
+    T шаг 750/1250  loss 0.6347  104 с
+    T шаг 1000/1250  loss 0.6335  141 с
+    T шаг 1250/1250  loss 0.6295  177 с
+  tiny T1  s3 val: 0.205
+  tiny T1  s3 dl19: 0.547
+  tiny T1  s3 dl20: 0.490
+    T шаг 250/1250  loss 0.6207  35 с
+    T шаг 500/1250  loss 0.6236  74 с
+    T шаг 750/1250  loss 0.6107  110 с
+    T шаг 1000/1250  loss 0.6168  144 с
+    T шаг 1250/1250  loss 0.6180  180 с
+  tiny T   s3 val: 0.228
+  tiny T   s3 dl19: 0.583
+  tiny T   s3 dl20: 0.503
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 24721.53it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== mini seed 3 на mps ===
+    H шаг 250/1250  loss 3.2474  127 с
+    H шаг 500/1250  loss 2.9241  253 с
+    H шаг 750/1250  loss 2.8399  376 с
+    H шаг 1000/1250  loss 2.7254  504 с
+    H шаг 1250/1250  loss 2.7053  628 с
+  mini H1  s3 val: 0.154
+  mini H1  s3 dl19: 0.537
+  mini H1  s3 dl20: 0.419
+    H шаг 250/1250  loss 2.5561  128 с
+    H шаг 500/1250  loss 2.5103  576 с
+    H шаг 750/1250  loss 2.5511  700 с
+    H шаг 1000/1250  loss 2.5515  827 с
+    H шаг 1250/1250  loss 2.4731  951 с
+  mini H   s3 val: 0.177
+  mini H   s3 dl19: 0.568
+  mini H   s3 dl20: 0.465
+    T шаг 250/1250  loss 0.6077  127 с
+    T шаг 500/1250  loss 0.5901  252 с
+    T шаг 750/1250  loss 0.5893  380 с
+    T шаг 1000/1250  loss 0.5835  506 с
+    T шаг 1250/1250  loss 0.5697  633 с
+  mini HT  s3 val: 0.267
+  mini HT  s3 dl19: 0.618
+  mini HT  s3 dl20: 0.543
+    T шаг 250/1250  loss 0.6443  125 с
+    T шаг 500/1250  loss 0.5991  249 с
+    T шаг 750/1250  loss 0.5886  371 с
+    T шаг 1000/1250  loss 0.5871  493 с
+    T шаг 1250/1250  loss 0.5771  617 с
+  mini T1  s3 val: 0.266
+  mini T1  s3 dl19: 0.613
+  mini T1  s3 dl20: 0.550
+    T шаг 250/1250  loss 0.5601  122 с
+    T шаг 500/1250  loss 0.5666  246 с
+    T шаг 750/1250  loss 0.5557  367 с
+    T шаг 1000/1250  loss 0.5575  488 с
+    T шаг 1250/1250  loss 0.5592  611 с
+  mini T   s3 val: 0.288
+  mini T   s3 dl19: 0.623
+  mini T   s3 dl20: 0.560
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 46191.34it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small seed 3 на mps ===
+    H шаг 250/1250  loss 3.1062  342 с
+    H шаг 500/1250  loss 2.7337  680 с
+    H шаг 750/1250  loss 2.6240  971 с
+    H шаг 1000/1250  loss 2.5424  1610 с
+    H шаг 1250/1250  loss 2.4794  2003 с
+  small H1  s3 val: 0.144
+  small H1  s3 dl19: 0.545
+  small H1  s3 dl20: 0.400
+    H шаг 250/1250  loss 2.1699  392 с
+    H шаг 500/1250  loss 2.2564  785 с
+    H шаг 750/1250  loss 2.2227  1300 с
+    H шаг 1000/1250  loss 2.2470  1651 с
+    H шаг 1250/1250  loss 2.1399  1934 с
+  small H   s3 val: 0.168
+  small H   s3 dl19: 0.549
+  small H   s3 dl20: 0.453
+    T шаг 250/1250  loss 0.6023  370 с
+    T шаг 500/1250  loss 0.5774  761 с
+    T шаг 750/1250  loss 0.5747  1153 с
+    T шаг 1000/1250  loss 0.5716  1547 с
+    T шаг 1250/1250  loss 0.5569  1915 с
+  small HT  s3 val: 0.284
+  small HT  s3 dl19: 0.647
+  small HT  s3 dl20: 0.585
+    T шаг 250/1250  loss 0.6335  329 с
+    T шаг 500/1250  loss 0.5841  615 с
+    T шаг 750/1250  loss 0.5703  945 с
+    T шаг 1000/1250  loss 0.5679  1293 с
+    T шаг 1250/1250  loss 0.5585  1644 с
+  small T1  s3 val: 0.314
+  small T1  s3 dl19: 0.643
+  small T1  s3 dl20: 0.597
+    T шаг 250/1250  loss 0.5249  535 с
+    T шаг 500/1250  loss 0.5382  881 с
+    T шаг 750/1250  loss 0.5264  1229 с
+    T шаг 1000/1250  loss 0.5235  1578 с
+    T шаг 1250/1250  loss 0.5263  1929 с
+  small T   s3 val: 0.302
+  small T   s3 dl19: 0.660
+  small T   s3 dl20: 0.609
+--- [2/3] основной seed 3 готов, 401 мин
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 3973.62it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== tiny H-nat seed 3 на mps ===
+    H шаг 250/649  loss 3.3432  36 с
+    H шаг 500/649  loss 3.1570  67 с
+    H шаг 250/649  loss 3.0163  32 с
+    H шаг 500/649  loss 2.8752  64 с
+  tiny H-nat s3 val: 0.231
+  tiny H-nat s3 dl19: 0.550
+  tiny H-nat s3 dl20: 0.520
+Loading weights:   0%|          | 0/39 [00:00<?, ?it/s]Loading weights: 100%|██████████| 39/39 [00:00<00:00, 7233.16it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-2_H-128_A-2
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== tiny T-nat seed 3 на mps ===
+    T шаг 250/649  loss 0.6672  38 с
+    T шаг 500/649  loss 0.6259  75 с
+    T шаг 250/649  loss 0.6184  32 с
+    T шаг 500/649  loss 0.6083  64 с
+  tiny T-nat s3 val: 0.226
+  tiny T-nat s3 dl19: 0.558
+  tiny T-nat s3 dl20: 0.493
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 43961.56it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== mini H-nat seed 3 на mps ===
+    H шаг 250/649  loss 3.0522  118 с
+    H шаг 500/649  loss 2.6875  242 с
+    H шаг 250/649  loss 2.5218  122 с
+    H шаг 500/649  loss 2.4685  244 с
+  mini H-nat s3 val: 0.264
+  mini H-nat s3 dl19: 0.598
+  mini H-nat s3 dl20: 0.532
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 41889.94it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-256_A-4
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== mini T-nat seed 3 на mps ===
+    T шаг 250/649  loss 0.6196  125 с
+    T шаг 500/649  loss 0.5748  248 с
+    T шаг 250/649  loss 0.5553  124 с
+    T шаг 500/649  loss 0.5450  247 с
+  mini T-nat s3 val: 0.274
+  mini T-nat s3 dl19: 0.601
+  mini T-nat s3 dl20: 0.561
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 43968.05it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small H-nat seed 3 на mps ===
+    H шаг 250/649  loss 2.9184  348 с
+    H шаг 500/649  loss 2.4925  695 с
+    H шаг 250/649  loss 2.2761  346 с
+    H шаг 500/649  loss 2.1513  887 с
+  small H-nat s3 val: 0.285
+  small H-nat s3 dl19: 0.632
+  small H-nat s3 dl20: 0.577
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]Loading weights: 100%|██████████| 71/71 [00:00<00:00, 44991.02it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: google/bert_uncased_L-4_H-512_A-8
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.bias               | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+=== small T-nat seed 3 на mps ===
+    T шаг 250/649  loss 0.6034  345 с
+    T шаг 500/649  loss 0.5530  690 с
+    T шаг 250/649  loss 0.5203  353 с
+    T шаг 500/649  loss 0.5136  700 с
+  small T-nat s3 val: 0.307
+  small T-nat s3 dl19: 0.631
+  small T-nat s3 dl20: 0.603
+=== [3/3] ВСЁ ГОТОВО, 496 мин
